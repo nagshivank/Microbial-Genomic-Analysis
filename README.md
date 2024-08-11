@@ -1,5 +1,5 @@
 # Microbial-Genomic-Analysis
-
+This project provides an end-to-end solution for microbial genomic analysis, from initial quality control and assembly of paired-end read files to gene prediction and annotation using advanced tools like Bakta. It supports taxonomic classification, detection of virulent factors, and antimicrobial resistance gene identification. Additionally, it includes scripts for visualizing results and performing comparative genomic analyses to generate insights into microbial genomes.
 ## Setting up the Environment
 The requisite packages to be installed for the QC and Assembly run are listed in the *qc_assembly_env.yml* file.
 <br><br>
