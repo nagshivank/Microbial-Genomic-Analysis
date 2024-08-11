@@ -126,13 +126,13 @@ tcdA and tcdB are known virulent factors enabling the pathogenecity of *C. diffi
 ./blast.sh <tcda.fasta file> <tcdb.fasta file> <directory containing assemblies
 ```
 ### Visualizing the Findings
-The ```python ani_dotplot.py``` file generates a dot plot of coverage versus ANI from FastANI results. 
-The ```python krak_report_abundances.py``` file takes the high-level taxa assignments generated from Kraken2 or Bracken and generates a stacked bar plot of relative abundances.
-The ```r assembly_comparison_dotplot.R``` script plots the total length of the contigs versus the total number of contigs from the QUAST results in a dot plot.
+The ```ani_dotplot.py``` file generates a dot plot of coverage versus ANI from FastANI results. 
+The ```krak_report_abundances.py``` file takes the high-level taxa assignments generated from Kraken2 or Bracken and generates a stacked bar plot of relative abundances.
+The ```assembly_comparison_dotplot.R``` script plots the total length of the contigs versus the total number of contigs from the QUAST results in a dot plot.
 
 ---
 
 ## Comparitive Genomic Analysis
-The ```sh antimicrobial_gene_identification.sh``` script runs AMRFinderPlus on the '*.faa*' files to identify antimicrobial resistance genes. It then filters the results to include only complete genes and generates a binary presence/absence matrix from the filtered data, summarizing the resistance profiles of the samples.<br><br>
-Following this, the ```sh AMD_Visualization.sh``` script visualizes antimicrobial resistance (AMR) gene profiles for different samples. It creates a bar plot showing the presence or absence of specific genes across samples, calculates the cumulative presence of each gene, and then generates pie charts that display the overall distribution and grouping of these genes by category.<br><br>
-The ```parsnp_ginger.sh``` script needs to be executed to visualize the taxonomic tree for the identified species as in *gingr_display.png* and the ```sh snippy.sh``` script can be run to infer phylogeny based on the Single Nucleotide Polymorphisms (SNPs) present in the sample, as displayed in *cole.aln.tree.jpg*.
+The ```antimicrobial_gene_identification.sh``` script runs AMRFinderPlus on the FASTA files to identify antimicrobial resistance genes. It then filters the results to include only complete genes and generates a binary presence/absence matrix from the filtered data, summarizing the resistance profiles of the samples.<br><br>
+Following this, the ```AMR_Visualization.sh``` script visualizes antimicrobial resistance (AMR) gene profiles for different samples. It creates a bar plot showing the presence or absence of specific genes across samples, calculates the cumulative presence of each gene, and then generates pie charts that display the overall distribution and grouping of these genes by category.<br><br>
+The ```parsnp_ginger.sh``` script needs to be executed to visualize the taxonomic tree for the identified species as in *gingr_display.png* and the ```snippy.sh``` script can be run to infer phylogeny based on the Single Nucleotide Polymorphisms (SNPs) present in the sample, as displayed in *cole.aln.tree.jpg*.
